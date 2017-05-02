@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SerialAssistant.exe" version="1.3.0.0" publicKeyToken="481cfbf9521dea44" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="1.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SerialAssistant" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SerialAssistant.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="507392">
+      <assemblyIdentity name="Newtonsoft.Json" version="7.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5+A0fbsTiVHUjl1VdGcrIIinncjKL15b9KVqomgfT0A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SerialAssistant.exe" size="3238384">
+      <assemblyIdentity name="SerialAssistant" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E5nhIgwiHHaq7xo+Y4X5cFJZ12MA6a+h11ns4Pm7o/s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="1.ico" size="92102">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+EjBV5QWFpq8iE+QwlNurzwJNddAWEZuwjkaBNodiEc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net20\Newtonsoft.Json.dll" size="507392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5+A0fbsTiVHUjl1VdGcrIIinncjKL15b9KVqomgfT0A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net20\Newtonsoft.Json.pdb" size="1322496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OpM+WswJex4mwJhtXt/EqHdO4SYw2/YV7Qc4beJ0y/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net35\Newtonsoft.Json.dll" size="465408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OsB/A3Jyf2l7Fo9A48LUizU5ZhpzWREo26uC3AxKth4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net35\Newtonsoft.Json.pdb" size="1318400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SRBsXWiw08AxbLYre/n3sPRtTJkt/H5JwPsq4KHsZAc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net40\Newtonsoft.Json.dll" size="510976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NclJIyUJKdXuLE//MP3sZyUmg4+SbSPDpObODyzG9C4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net40\Newtonsoft.Json.pdb" size="1318400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ouGbSYwp8tgABiD8XABoprQ34rW+VkQosgzSgF2quwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net45\Newtonsoft.Json.dll" size="520192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nsosXtGHteExnDWaq/g4KZITHv4YVLiZwjqT/iJ0luM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Net45\Newtonsoft.Json.pdb" size="1224192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dh/QPfbDsDU7FbctrkXfWn1XcVc6STAqD1U1EXgzVaU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Portable\Newtonsoft.Json.dll" size="484864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GwtgxnWOE4/1uM01w7EnBafjYtWDFGXuqfsGjujHlaM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Portable\Newtonsoft.Json.pdb" size="1248768">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7Y1k4wZZFj/pQPdu3fyS5eMZuGxYZwU/RENPmoYJTzY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Portable40\Newtonsoft.Json.dll" size="407552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y2EwdJgQvmEY3UZ51A8Q5DrAftFl+rDgEeEhIQJc6bw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\Json\Portable40\Newtonsoft.Json.pdb" size="1248768">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2x9L6vT23u6mXiLThwenj6Yww8vilo3rOvKRTwXyDjs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SerialAssistant.exe.config" size="178">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>99quqBP3LkKA5r/eDtx+5/BU6wUiADC+z31EUEMtKSc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SerialAssistant" issuerKeyHash="4d22a42eee011b358529a601f4fb04bd4de8e880" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fge4Q29io2V4zrCNKMk7sFbyVYQ=</DigestValue></Reference></SignedInfo><SignatureValue>nLbbQH4JAVZVi2l249SnFS4QA9EEuGis/c7DtteAax4IVCahto3IAECP8460PG27P9s0NMSMIETy1QLD4erbx0+eDvHYchKVG1Xn/qKTChVGQW7y1spnz+Obz22MdyQHOvtq5hvMZglwzqLnEcneAmNe+8H7r7q6qbot9Zzy+5Q=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>v1z9qzQtHKfEIxtjg8vSXOZfziQ/Zy728HxTwMKe++zi0AKzJtR+DL8qkq61Og7vS3m9CgsI4xWPlEPj1I7fk07kkMfHRh9HwHw7FeZRU14p5v93msYfElgxu1M+omoJFGg36w+kFSvcqk9gxR8kFmFQKQxJZgTwFJ0h1lfrvYE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8455f256b03bc9288db0ce7865a3626f43b8077e" Description="" Url=""><as:assemblyIdentity name="SerialAssistant.exe" version="1.3.0.0" publicKeyToken="481cfbf9521dea44" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SerialAssistant</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>vIU7RhHtqYap0h2YkfEa6lMaE3I=</DigestValue></Reference></SignedInfo><SignatureValue>FmZt9dE/cj9hflyzdja1M9rqGj9ecsrD/FJNtqPdpCz1BYIsUcBGgtrWJ+mI3/8Bw5mpBGbJQcl07k/WPlRHPC6PL/tvPiWIT6l7BCiN1sbLVGhI63uTY4g774kKy1Iagqsvre5Cf2+tM313QoqzFISSEvqOQh4CcVagUa4a1n0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>v1z9qzQtHKfEIxtjg8vSXOZfziQ/Zy728HxTwMKe++zi0AKzJtR+DL8qkq61Og7vS3m9CgsI4xWPlEPj1I7fk07kkMfHRh9HwHw7FeZRU14p5v93msYfElgxu1M+omoJFGg36w+kFSvcqk9gxR8kFmFQKQxJZgTwFJ0h1lfrvYE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICHTCCAYagAwIBAgIQln5JT7XNJZBNTGWZOPJyrjANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDEw9TZXJpYWxBc3Npc3RhbnQwHhcNMTYxMjMxMTYwMDAwWhcNMjIxMjMxMTYwMDAwWjAaMRgwFgYDVQQDEw9TZXJpYWxBc3Npc3RhbnQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL9c/as0LRynxCMbY4PL0lzmX84kP2cu9vB8U8DCnvvs4tACsybUfgy/KpKutToO70t5vQoLCOMVj5RD49SO35NO5JDHx0YfR8B8OxXmUVNeKeb/d5rGHxJYMbtTPqJqCRRoN+sPpBUr3KpPYMUfJBZhUCkMSWYE8BSdIdZX672BAgMBAAGjZDBiMBMGA1UdJQQMMAoGCCsGAQUFBwMDMEsGA1UdAQREMEKAEE7IgXREoMH+XfDg2+Hahr6hHDAaMRgwFgYDVQQDEw9TZXJpYWxBc3Npc3RhbnSCEJZ+SU+1zSWQTUxlmTjycq4wDQYJKoZIhvcNAQEFBQADgYEACdbDvkh29d8go9X1gvebhUuVWKaKIJmkMnSsK+nk1wYVWK7zjyzjqZYqv9JisnEmjZt7x4Ob4XVRjbG1zwAH6NyL73qgVe1a91naXUYG75zKXkdhoK1mA+vKtfhm61R/+ZLXvLntZf6zKPJNy5JLNuGA3I1Pl1ymVmf2VB4Zl0k=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
